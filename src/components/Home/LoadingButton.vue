@@ -6,7 +6,6 @@
     @click="$emit('click')"
   >
     <span v-if="loading" class="flex items-center justify-center">
-      <!-- TODO: spinner component with tailwind and refactor -->
       <svg
         class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
         xmlns="http://www.w3.org/2000/svg"
