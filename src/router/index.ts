@@ -13,6 +13,18 @@ const routes = [
     name: "Repositories",
     component: Repositories,
     props: true,
+    // Route validation
+    beforeEnter: (to: any) => {
+      // Validate username parameter
+      const username = to.params.username;
+      if (
+        !username ||
+        typeof username !== "string" ||
+        username.trim().length < 1
+      ) {
+        return { name: "Home" };
+      }
+    },
   },
 ];
 
