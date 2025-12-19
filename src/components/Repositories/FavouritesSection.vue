@@ -1,5 +1,5 @@
 <template>
-  <div v-if="favourites.length > 0" class="mt-8">
+  <div id="favourites-section" v-if="favourites.length > 0" class="mt-8">
     <div class="bg-white rounded-lg shadow-md">
       <div class="p-4 border-b">
         <div class="flex justify-between items-center">
